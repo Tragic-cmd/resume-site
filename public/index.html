@@ -1,16 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>start with create-tailwind-app</title>  
-    <link rel="stylesheet" href="./assets/css/build/tailwind.css">
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cody Shouey — Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#0f172a',
+              accent: '#2563eb',
+            },
+          },
+        },
+      }
+    </script>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  </head>
+  <body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans leading-relaxed">
+    <div class="max-w-4xl mx-auto p-6 space-y-10">
+      <div class="flex justify-between items-center">
+        <h1 class="text-4xl font-bold">Cody Shouey</h1>
+        <button id="themeToggle" class="px-3 py-1 rounded border dark:border-gray-700 border-gray-300">
+          Toggle Dark Mode
+        </button>
+      </div>
+      <div class="text-sm space-y-1">
+        <p>107 Cemetery Street, Vassalboro, ME 04989</p>
+        <p><a href="mailto:codyshouey@gmail.com" class="text-accent hover:underline">(484) 219-1269</a></p>
+        <p><a href="mailto:codyshouey@gmail.com" class="text-accent hover:underline">codyshouey@gmail.com</a></p>
+        <p><a href="https://www.linkedin.com/in/cody-shouey-2156a01b3/" target="_blank" class="hover:underline">LinkedIn</a> | <a href="https://github.com/Tragic-cmd" target="_blank" class="hover:underline">GitHub</a> | <a href="https://www.boot.dev/u/tragic-cmd" target="_blank" class="hover:underline">Boot.dev</a></p>
+      </div>
 
-</head>
-<body class="bg-gray-600">
+      <section>
+        <h2 class="text-2xl font-semibold border-b border-gray-300 dark:border-gray-700 pb-2 mb-4">Professional Summary</h2>
+        <p>Results-driven IT professional with deep expertise in network security, enterprise systems administration, and infrastructure automation. Known for architecting resilient virtualized environments, leading high-impact IT projects, and optimizing systems for security, scalability, and performance. Strong communicator skilled in simplifying complex technical issues for cross-functional teams. Passionate about continuous learning, with top global performance in hands-on cybersecurity training platforms and a growing portfolio of impactful software tools.</p>
+      </section>
 
-    <h2 class="p-10"> start </h2>
-    
-</body>
+      <section>
+        <h2 class="text-2xl font-semibold border-b border-gray-300 dark:border-gray-700 pb-2 mb-4">Professional Experience</h2>
+        <div class="mb-6">
+          <h3 class="font-bold text-lg">Senior Field Service Technician — Honeywell</h3>
+          <p class="text-sm text-gray-500">January 2025 – Present</p>
+          <ul class="list-disc pl-5 mt-2 space-y-1">
+            <li>Engineered and maintained enterprise-grade VMware/vSphere environments with high-availability configurations and SAN-backed storage solutions</li>
+            <li>Deployed, configured, and supported Windows Server infrastructure across diverse client environments to ensure secure and reliable operations</li>
+            <li>Implemented centralized monitoring, backup, and disaster recovery strategies to protect critical business systems and data integrity</li>
+            <li>Diagnosed and resolved complex server and networking issues, reducing unplanned downtime by 40% through proactive troubleshooting</li>
+            <li>Collaborated with IT security teams to enforce access controls, improve system hardening, and maintain compliance with organizational security policies</li>
+          </ul>
+        </div>
+        <div class="mb-6">
+          <h3 class="font-bold text-lg">NOC Engineer — Maine Technology Group (MSP)</h3>
+          <p class="text-sm text-gray-500">January 2023 – December 2024</p>
+          <ul class="list-disc pl-5 mt-2 space-y-1">
+            <li>Managed multi-tenant Active Directory and Windows Server environments for 2,200+ users across healthcare, education, local government, and manufacturing sectors</li>
+            <li>Automated routine tasks and administrative processes using PowerShell and scripting, improving SLA performance and reducing manual workload</li>
+            <li>Responded to critical incidents with urgency, routinely resolving P1 issues under SLA thresholds while maintaining high client satisfaction</li>
+            <li>Optimized network monitoring systems by fine-tuning alerts, reducing false positives by 40%, and improving threat visibility</li>
+            <li>Performed internal vulnerability assessments aligned with NIST and CIS standards, identifying and remediating critical risks</li>
+            <li>Delivered expert-level support across hybrid IT environments, maintaining a 99% client satisfaction rating through consistent, high-quality service</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-semibold border-b border-gray-300 dark:border-gray-700 pb-2 mb-4">Featured Project</h2>
+        <p><strong>Camera Server Sizing Calculator:</strong> <a href="https://camera-server-sizing-calculator.onrender.com/login.html" class="text-accent hover:underline">Live Demo</a></p>
+        <ul class="list-disc pl-5 mt-2 space-y-1">
+          <li>A full-stack web application to determine server specs based on surveillance system parameters.</li>
+          <li>Designed modular architecture for dynamic storage, CPU, and bandwidth calculations</li>
+          <li>Integrated RAID configuration logic, VM overhead planning, and motion-based bitrate profiling</li>
+          <li>Implemented secure user authentication and role-based access for saved configurations</li>
+          <li>Technologies: JavaScript, HTML/CSS, SQLite, Express.js, Node.js</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-semibold border-b border-gray-300 dark:border-gray-700 pb-2 mb-4">Education</h2>
+        <p><strong>AAS Computer Networking Technology</strong> – Graduated with Honors, Yavapai College (2019–2022)</p>
+        <p><strong>High School Diploma</strong> – Reading Area High School (2013)</p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-semibold border-b border-gray-300 dark:border-gray-700 pb-2 mb-4">Certifications & Achievements</h2>
+        <ul class="list-disc pl-5 space-y-1">
+          <li>CompTIA A+ - July 2021 (Valid through July 2024)</li>
+          <li>Cybersecurity Specialist Certificate - Yavapai College, May 2021</li>
+          <li>Arizona General Education Curriculum-A - Yavapai College, December 2022</li>
+          <li>Phi Theta Kappa Honors Society - Member since November 2021</li>
+          <li>TryHackMe Cybersecurity Training - Top 9% performer globally</li>
+          <li>Blue Team Labs Online - Top 10% performer globally</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-semibold border-b border-gray-300 dark:border-gray-700 pb-2 mb-4">Technical Expertise</h2>
+        <ul class="list-disc pl-5 space-y-1">
+          <li><strong>Virtualization & Enterprise Storage:</strong> VMware/vSphere | Storage Area Networks | High-Availability Clustering | Server Hardware Design | Disaster Recovery Solutions</li>
+          <li><strong>Network Security & Infrastructure:</strong> Next-Gen Firewalls | SD-WAN | Advanced VPN Technologies | IDS/IPS | Cisco Networking | Enterprise WAN/LAN Design</li>
+          <li><strong>Systems Administration:</strong> Active Directory | Windows Server | MacOS | Linux | PowerShell | Shell Scripting | Configuration Management</li>
+          <li><strong>Security Tools & Analysis:</strong> NMAP | Wireshark | Metasploit | Cryptography | Digital Forensics | Vulnerability Assessment | OSINT Techniques</li>
+          <li><strong>Development:</strong> Python | PowerShell | Bash | JavaScript | SQLite | Express.js | Node.js | HTML/CSS | Git Version Control | CI/CD Pipelines</li>
+          <li><strong>Industrial Control Systems:</strong> Building Automation Systems | Honeywell EBI | Honeywell DVM | OT Network Architecture | IEC 62443 Security Standards</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-semibold border-b border-gray-300 dark:border-gray-700 pb-2 mb-4">Core Competencies</h2>
+        <ul class="list-disc pl-5 space-y-1">
+          <li>Enterprise Infrastructure Administration</li>
+          <li>Incident Response & Troubleshooting</li>
+          <li>Scripting & Process Automation</li>
+          <li>Virtualization & Server Provisioning</li>
+          <li>Secure Network Design</li>
+          <li>Cross-Team Collaboration</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-semibold border-b border-gray-300 dark:border-gray-700 pb-2 mb-4">References</h2>
+        <ul class="space-y-2">
+          <li><strong>Michael Duncan</strong> – Owner, Rapid Ventures — (425) 361-6034 | <a href="mailto:michael@holidaylightingexpress.com" class="text-accent hover:underline">michael@holidaylightingexpress.com</a></li>
+          <li><strong>Matthew Ferguson</strong> – Coworker — (480) 353-9952 | <a href="mailto:mattferg01@yahoo.com" class="text-accent hover:underline">mattferg01@yahoo.com</a></li>
+          <li><strong>Lamar Johnson</strong> – Professor, Yavapai College — (602) 363-8782 | <a href="mailto:lamar.johnson@me.com" class="text-accent hover:underline">lamar.johnson@me.com</a></li>
+          <li><strong>Samantha Adams</strong> — (774) 283-5013 | <a href="mailto:samanthaadams2001@gmail.com" class="text-accent hover:underline">samanthaadams2001@gmail.com</a></li>
+        </ul>
+      </section>
+
+      <div class="text-right">
+        <button onclick="window.print()" class="mt-6 px-4 py-2 bg-accent text-white rounded shadow hover:bg-blue-600">Download PDF</button>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById('themeToggle').addEventListener('click', () => {
+        document.documentElement.classList.toggle('dark')
+      });
+
+      const links = document.querySelectorAll('.nav-link');
+      const sections = [...links].map(link => document.querySelector(link.getAttribute('href')));
+
+      function onScroll() {
+        const scrollPos = window.scrollY + 100;
+        sections.forEach((section, i) => {
+          const offsetTop = section.offsetTop;
+          const offsetHeight = section.offsetHeight;
+          if (scrollPos >= offsetTop && scrollPos < offsetTop + offsetHeight) {
+            links.forEach(link => link.classList.remove('text-accent'));
+            links[i].classList.add('text-accent');
+          }
+        });
+      }
+
+      window.addEventListener('scroll', onScroll);
+    </script>
+  </body>
 </html>
